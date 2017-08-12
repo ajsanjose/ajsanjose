@@ -23,8 +23,8 @@ cacheSolve <- function(x, ...) {
                 return(i)
         }
         
-        mat.data = x$get()
-        i = solve(mat.data, ...)
+        data = x$get()
+        i = solve(data, ...)
         
         x$setinv(i)
         i
